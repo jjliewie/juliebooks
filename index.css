@@ -1,0 +1,37 @@
+html {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color:blue;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: red;
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
